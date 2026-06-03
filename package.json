@@ -1,0 +1,19 @@
+{
+  "name": "underground-pipeline",
+  "version": "1.0.0",
+  "description": "地下管线测绘 APP - 官网和管理后台",
+  "scripts": {
+    "install-all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": ["pipeline", "survey", "mapping"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
